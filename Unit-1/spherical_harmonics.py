@@ -16,11 +16,11 @@ def plot_spharm(l : int,m : int):
 
     fig, ax = plt.subplots(subplot_kw={"projection" : "3d"})   
 
-    ax.plot_surface(x, y, z, rstride=3, cstride=3, facecolors=plt.cm.viridis(p_den), linewidth = 0, antialiased = False)
+    ax.plot_surface(x, y, z, facecolors=plt.cm.viridis(p_den))
     ax.set_title(f"Spherical Harmonics l = {l}, m = {m}")
     plt.show()
 
-plot_spharm(0,0)
+plot_spharm(1,1)
 
 
 
